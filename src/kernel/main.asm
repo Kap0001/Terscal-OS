@@ -2,6 +2,9 @@ org 0x0
 bits 16
 
 
+; unlimited features there :)
+
+
 %define ENDL 0x0D, 0x0A
 
 
@@ -9,7 +12,7 @@ start:
 
     pusha
     mov ah, 0x00
-    mov al, 0x03  ; text mode 80x25 16 colours
+    mov al, 0x03
     int 0x10
     popa
 
