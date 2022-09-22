@@ -16,7 +16,7 @@ start:
     int 0x10
     popa
 
-    ; print hello world message
+    ; print welcome message
     mov si, msg_hello
     call puts
 
