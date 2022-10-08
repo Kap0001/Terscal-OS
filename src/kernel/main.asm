@@ -34,7 +34,7 @@ start:
         je ver
 
         cmp al, 1bh
-        je se
+        je reboot
 
         mov ah, 00
         int 16h
@@ -260,7 +260,7 @@ start:
         int 0x10
         popa
 
-        jmp start
+        int 19h
 
 
 se:
